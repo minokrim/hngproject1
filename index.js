@@ -70,7 +70,10 @@ function myFunction() {
 $(".dropbtn").click(showlinks)
 function showlinks(){
     if(window.innerWidth <= 770 &&  $(".dropdown-content").css("display")==="none"){
-        $(".dropdown-content").toggle()
+        $(".dropdown-content").slideToggle()
+    }
+    else if(window.innerWidth <= 770 &&  $(".dropdown-content").css("display")==="block"){
+        $(".dropdown-content").slideToggle()
     }
     }
 
