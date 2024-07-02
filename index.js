@@ -42,11 +42,7 @@ $(document).ready(function() {
             removeHoverEffects();
         }
     }
-
-    // Initial check
     checkScreenWidth();
-
-    // Check on window resize
     $(window).resize(checkScreenWidth);
 });
 var daysOfTheWeek=["SUNDAY","MONDAY","TUESDAY","WEDNESDA","THURSDAY","FRIDAY","SATURDAY"]
@@ -70,6 +66,14 @@ function myFunction() {
       x.css("display","none");
     }
 }  
+
+$(".dropbtn").click(showlinks)
+function showlinks(){
+    if(window.innerWidth <= 770 &&  $(".dropdown-content").css("display")==="none"){
+        $(".dropdown-content").toggle()
+    }
+    }
+
 
 
 
